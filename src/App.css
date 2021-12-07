@@ -1,38 +1,183 @@
-.App {
+
+.listPokemonWrapper {
+  width: 100%;
+}
+
+.listPokemonWrapper a{
+  text-decoration: none;
+}
+
+ .listPokemonItem{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgb(250, 250, 143);
+  text-transform: uppercase;
+  
+}
+
+ .pokemonName{
+  position: relative;
+  left: 0;
+  color: black;
+  list-style: none;
+  margin: 4px;
+  text-decoration: none;
+}
+
+
+.detailpage {
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.detailpage-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  background-color: lemonchiffon;
+}
+
+.detailpage-wrapper .detailpage-bigimage{
+  max-width: 500px;
+  min-width: 290px;
+  overflow: hidden;
+  margin: 25px;
+}
+
+.detailpage-bigimage img{
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  display: block;
+  object-fit: cover;
+}
+
+.detailpage-wrapper .detailpage-box {
+  max-width: 500px;
+  min-width: 375px;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.detailpage-box .detailpage-row {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.detailpage-box .detailpage-row h2{
+  text-transform: uppercase;
+  letter-spacing: 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.detailpage-box .detailpage-row .detailpage-type{
   color: white;
+  text-transform: uppercase;
+  margin: 15px 0;
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: orange;
 }
 
-.App-link {
-  color: #61dafb;
+.detailpage-box p{
+  line-height: 1.5;
+  margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detailpage-smallimage{
+  width: fit-content;
+  height: fit-content;
+  object-fit: cover;
+
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.detailpage-smallimage :hover{
+  opacity: 1;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.detailpage-box .btn-catch {
+  background: orange;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.detailpage-subtitle-stats {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: yellow;
+  color: aliceblue;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.detailpage-subtitle-abilities {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: yellow;
+  color: aliceblue;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.detailpage-subtitle-moves {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: yellow;
+  color: aliceblue;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.detailpage-statsdetail {
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: lemonchiffon;
+  color: black;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.detailpage-abilitiesdetail {
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: lemonchiffon;
+  color: black;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.detailpage-helditemsdetail {
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: lemonchiffon;
+  color: black;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.detailpage-movesdetail {
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: lemonchiffon;
+  color: black;
+  line-height: 1.5;
+  letter-spacing: 2px;
 }
